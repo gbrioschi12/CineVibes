@@ -13,7 +13,7 @@
         android:layout_height="230dp"
         android:layout_marginStart="@dimen/margin"
         android:layout_marginEnd="@dimen/margin"
-        app:srcCompat="@drawable/icona_cinevibes" />
+        app:srcCompat="@drawable/icona_cinevibes_completa" />
 
     <TextView
         android:layout_width="wrap_content"
