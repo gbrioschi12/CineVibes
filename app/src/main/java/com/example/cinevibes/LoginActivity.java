@@ -30,6 +30,19 @@ public class LoginActivity extends AppCompatActivity {
         accediButton.setOnClickListener(view -> {
             Log.d(TAG, "Email: " + editTextEmail.getText());
             Log.d(TAG, "Password: " + editTextPassword.getText());
+
+            if(isEmailOk(editTextEmail.getText().toString()) && (isPasswordOk(editTextPassword.getText().toString()))){
+                Log.d(TAG, "Launch new activity");
+            }
+            else Log.d(TAG, "Error");
+
         });
+    }
+
+    private boolean isEmailOk (String email) {
+        return true;
+    }
+    private boolean isPasswordOk (String password) {
+        return password.length() > 8;
     }
 }

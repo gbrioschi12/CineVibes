@@ -5,4 +5,9 @@
     <string name="password">Password</string>
     <string name="accedi">Accedi</string>
     <string name="crea_account">Crea account</string>
+    <string name="crea_un_nuovo_account">Crea un nuovo account</string>
+    <string name="nome">Nome</string>
+    <string name="cognome">Cognome</string>
+    <string name="età">Età</string>
+    <string name="hai_dimenticato_la_password">Hai dimenticato la password?</string>
 </resources>
