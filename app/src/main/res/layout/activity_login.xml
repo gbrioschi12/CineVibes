@@ -37,6 +37,7 @@
         style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </com.google.android.material.textfield.TextInputEditText>
@@ -54,6 +55,7 @@
         style="?attr/textInputFilledStyle">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
         </com.google.android.material.textfield.TextInputEditText>
@@ -70,6 +72,7 @@
     </Button>
 
     <Button
+        android:id="@+id/accediButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/accedi"
