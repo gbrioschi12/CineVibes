@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CineVibes</string>
+    <string name="accedi_al_tuo_account">Accedi al tuo account</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="accedi">Accedi</string>
+    <string name="crea_account">Crea account</string>
+</resources>
