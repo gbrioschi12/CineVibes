@@ -10,4 +10,8 @@
     <string name="cognome">Cognome</string>
     <string name="età">Età</string>
     <string name="hai_dimenticato_la_password">Hai dimenticato la password?</string>
+    <string name="modifica_profilo">Modifica profilo</string>
+    <string name="assistenza">Assistenza</string>
+    <string name="log_out">Log Out</string>
+    <string name="impostazioni">Impostazioni</string>
 </resources>
