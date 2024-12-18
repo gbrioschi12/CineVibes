@@ -26,7 +26,11 @@
     <string name="costo">Costo</string>
     <string name="restrizioni_et">Restrizioni età</string>
     <string name="la_mia_lista_di_gi_visti">La mia lista di già visti</string>
-    <string name="aggiungi">Aggiungi</string>
-    <string name="aggiungi_alla_mia_lista">Aggiungi alla mia lista</string>
     <string name="ultime_proposte">Ultime proposte</string>
+    <string name="titolo">Titolo</string>
+    <string name="generi">Generi</string>
+    <string name="anno">anno</string>
+    <string name="aggiungi_alla_lista">Aggiungi alla lista</string>
+    <string name="modalit_scura">Modalità scura</string>
+    <string name="visualizzazioni">visualizzazioni</string>
 </resources>

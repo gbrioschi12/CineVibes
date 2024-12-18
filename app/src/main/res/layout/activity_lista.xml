@@ -5,15 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginStart="@dimen/margin"
-    android:layout_marginEnd="@dimen/margin"
     android:background="@color/sfondo"
     tools:context=".ListaActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="80dp"
         app:srcCompat="@drawable/titolo" />
 
     <TextView
@@ -27,7 +26,7 @@
     <Button
         android:layout_width="200dp"
         android:layout_height="80dp"
-        android:text="@string/aggiungi"
+        android:text="@string/aggiungi_alla_lista"
         style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"

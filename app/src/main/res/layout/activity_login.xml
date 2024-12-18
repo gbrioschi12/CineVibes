@@ -5,15 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_marginStart="@dimen/margin"
-    android:layout_marginEnd="@dimen/margin"
+    android:background="@color/sfondo"
     tools:context=".LoginActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
-        app:srcCompat="@drawable/icona_cinevibes_completa" />
+        android:layout_marginTop="10dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/icona2" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -61,7 +61,7 @@
         android:text="@string/hai_dimenticato_la_password"
         style="@style/Widget.Material3.Button.TextButton"
         android:gravity="start"
-        android:layout_marginStart="27dp" >
+        android:layout_marginStart="55dp" >
     </Button>
 
     <Button
@@ -77,7 +77,7 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/crea_account"
-        style="?attr/materialButtonOutlinedStyle"
+        style="@style/Widget.Material3.Button.ElevatedButton"
         android:layout_marginTop="60dp"
         android:layout_gravity="center_horizontal" >
     </Button>

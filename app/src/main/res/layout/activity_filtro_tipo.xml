@@ -11,7 +11,8 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:layout_height="80dp"
         app:srcCompat="@drawable/titolo" />
 
     <TextView
@@ -53,6 +54,8 @@
         android:id="@+id/bottom_navigation"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/bottom_navigation_menu" />
+        app:menu="@menu/bottom_navigation_menu"
+        android:layout_marginTop="140dp"
+        />
 
 </LinearLayout>
