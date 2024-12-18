@@ -14,4 +14,10 @@
     <string name="assistenza">Assistenza</string>
     <string name="log_out">Log Out</string>
     <string name="impostazioni">Impostazioni</string>
+    <string name="film">Film</string>
+    <string name="serie_tv">Serie TV</string>
+    <string name="entrambi">Entrambi</string>
+    <string name="home">Home</string>
+    <string name="esplora">Esplora</string>
+    <string name="lista">Lista</string>
 </resources>
