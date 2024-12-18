@@ -13,6 +13,15 @@
         android:theme="@style/Theme.CineVibes"
         tools:targetApi="31">
         <activity
+            android:name=".AggiungiListaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ListaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
             android:name=".FiltroTipoActivity"
             android:exported="false" />
         <activity

@@ -20,4 +20,12 @@
     <string name="home">Home</string>
     <string name="esplora">Esplora</string>
     <string name="lista">Lista</string>
+    <string name="seleziona_i_filtri_base">Seleziona i filtri base</string>
+    <string name="inizia_la_ricerca">Inizia la ricerca</string>
+    <string name="lingua">Lingua</string>
+    <string name="costo">Costo</string>
+    <string name="restrizioni_et">Restrizioni età</string>
+    <string name="la_mia_lista_di_gi_visti">La mia lista di già visti</string>
+    <string name="aggiungi">Aggiungi</string>
+    <string name="aggiungi_alla_mia_lista">Aggiungi alla mia lista</string>
 </resources>
