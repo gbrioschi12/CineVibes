@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CineVibes"
         tools:targetApi="31">
         <activity
+            android:name=".EsploraActivity"
+            android:exported="false" />
+        <activity
             android:name=".SchedaFilmActivity"
             android:exported="false" />
         <activity
