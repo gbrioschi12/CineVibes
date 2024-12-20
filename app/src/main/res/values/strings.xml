@@ -35,4 +35,21 @@
     <string name="visualizzazioni">visualizzazioni</string>
     <string name="imdb_rating">IMDB Rating</string>
     <string name="le_proposte_per_te">Le proposte per te</string>
+    <string name="come_vuoi_sentirti">Come vuoi sentirti?</string>
+    <string name="malinconico">Malinconico</string>
+    <string name="avventurioso">Avventurioso</string>
+    <string name="triste">Triste</string>
+    <string name="emotional">Emotional</string>
+    <string name="spaventato">Spaventato</string>
+    <string name="istruito">Istruito</string>
+    <string name="romantico">Romantico</string>
+    <string name="curioso">Curioso</string>
+    <string name="ispirato">Ispirato</string>
+    <string name="coraggioso">Coraggioso</string>
+    <string name="divertito">Divertito</string>
+    <string name="quali_piattaforme_di_streaming_possiedi">Quali piattaforme di streaming possiedi?</string>
+    <string name="apple_tv">Apple TV</string>
+    <string name="disney_plus">Disney Plus</string>
+    <string name="netflix">Netflix</string>
+    <string name="amazon_prime_video">Amazon Prime Video</string>
 </resources>

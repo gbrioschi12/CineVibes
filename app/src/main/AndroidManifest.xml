@@ -13,14 +13,20 @@
         android:theme="@style/Base.Theme.CineVibes"
         tools:targetApi="31">
         <activity
+            android:name=".PiattaformeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ComeTiSentiActivity"
+            android:exported="false" />
+        <activity
             android:name=".ProposteActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".EsploraActivity"
             android:exported="false" />
@@ -41,7 +47,7 @@
             android:exported="false" />
         <activity
             android:name=".AccountActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="true" />
