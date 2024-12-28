@@ -61,6 +61,9 @@
     <string name="seleziona_lingua">Seleziona una lingua da elenco</string>
     <string name="seleziona_costo">Seleziona un tipo di costo</string>
     <string name="seleziona_restrizione">Seleziona una restrizione età</string>
+    <string name="acculturato">Acculturato</string>
+    <string name="energico">Energico</string>
+    <string name="conferma">Conferma</string>
     <string-array name="costo_array">
         <item>Gratis</item>
         <item>A noleggio</item>

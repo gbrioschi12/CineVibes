@@ -26,73 +26,35 @@
         android:layout_gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
-
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/divertito"
-            android:layout_margin="5dp">
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/divertito"/>
 
-        </Button>
-
-        <Button
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/coraggioso"
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_margin="5dp">
-        </Button>
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/coraggioso"/>
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/ispirato"
-            android:layout_margin="5dp">
-        </Button>
-    </LinearLayout>
-
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
-
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/curioso"
-            android:layout_margin="5dp">
-
-        </Button>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/romantico"
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_margin="5dp">
-        </Button>
-
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/istruito"
-            android:layout_margin="5dp">
-        </Button>
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:text="@string/ispirato"/>
     </LinearLayout>
 
     <LinearLayout
@@ -101,31 +63,29 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/spaventato"
-            android:layout_margin="5dp">
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/curioso"/>
 
-        </Button>
-
-        <Button
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/emotional"
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_margin="5dp">
-        </Button>
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/acculturato"/>
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/triste"
-            android:layout_margin="5dp">
-        </Button>
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:text="@string/romantico"/>
     </LinearLayout>
 
     <LinearLayout
@@ -134,24 +94,69 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <Button
-            style="@style/Widget.Material3.Button.ElevatedButton"
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="@string/malinconico"
-            android:layout_margin="5dp">
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/spaventato"/>
 
-        </Button>
-
-        <Button
+        <com.google.android.material.chip.Chip
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/avventurioso"
-            style="@style/Widget.Material3.Button.ElevatedButton"
-            android:layout_margin="5dp">
-        </Button>
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/emotional"/>
 
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:text="@string/triste"/>
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/malinconico"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            android:text="@string/avventurioso"/>
+
+        <com.google.android.material.chip.Chip
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_margin="5dp"
+            style="@style/Widget.Material3.Chip.Filter"
+            android:text="@string/energico"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/accediButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/conferma"
+        android:layout_marginTop="60dp"
+        style="@style/Widget.Material3.Button.Icon"
+        android:layout_gravity="center_horizontal" >
+    </Button>
 </LinearLayout>
