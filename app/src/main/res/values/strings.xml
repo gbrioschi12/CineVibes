@@ -52,4 +52,24 @@
     <string name="disney_plus">Disney Plus</string>
     <string name="netflix">Netflix</string>
     <string name="amazon_prime_video">Amazon Prime Video</string>
+    <string-array name="lingua_array">
+        <item>Italiano</item>
+        <item>Inglese</item>
+        <item>Francese</item>
+        <item>Qualsiasi</item>
+    </string-array>
+    <string name="seleziona_lingua">Seleziona una lingua da elenco</string>
+    <string name="seleziona_costo">Seleziona un tipo di costo</string>
+    <string name="seleziona_restrizione">Seleziona una restrizione età</string>
+    <string-array name="costo_array">
+        <item>Gratis</item>
+        <item>A noleggio</item>
+        <item>Ad acquisto</item>
+        <item>Qualsiasi</item>
+    </string-array>
+    <string-array name="restrizioni_età_array">
+        <item>Nascondi +14</item>
+        <item>Nascondi +18</item>
+        <item>Tutti</item>
+    </string-array>
 </resources>

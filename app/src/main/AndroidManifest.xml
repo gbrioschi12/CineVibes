@@ -13,13 +13,7 @@
         android:theme="@style/Base.Theme.CineVibes"
         tools:targetApi="31">
         <activity
-            android:name=".PiattaformeActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ComeTiSentiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ProposteActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -28,31 +22,34 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".PiattaformeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ComeTiSentiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProposteActivity"
+            android:exported="true" />
+        <activity
             android:name=".EsploraActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SchedaFilmActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ListaActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".HomeActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FiltroTipoActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ImpostazioniActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".AccountActivity"
-            android:exported="true" />
-        <activity
-            android:name=".LoginActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
             android:exported="true" />
     </application>
 
