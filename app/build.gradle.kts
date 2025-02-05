@@ -36,6 +36,7 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
+    implementation("commons-validator:commons-validator:1.9.0")
     implementation(libs.retrofit)
     implementation(libs.navigation.fragment)
     implementation(libs.navigation.ui)

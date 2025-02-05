@@ -13,45 +13,46 @@
         android:theme="@style/Base.Theme.CineVibes"
         tools:targetApi="31">
         <activity
-            android:name=".LoginActivity"
-            android:exported="true"/>
-
+            android:name=".AccountActivity"
+            android:exported="false" />
         <activity
-            android:name=".PiattaformeActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".ComeTiSentiActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".ProposteActivity"
+            android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".EsploraActivity"
-            android:exported="true"/>
-
-        <activity
-            android:name=".SchedaFilmActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".ListaActivity"
-            android:exported="true"/>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" >
+            android:name=".LoginActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
+            android:name=".PiattaformeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ComeTiSentiActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ProposteActivity"
+            android:exported="true" />
+        <activity
+            android:name=".EsploraActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SchedaFilmActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ListaActivity"
+            android:exported="true" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
             android:name=".FiltroTipoActivity"
             android:exported="true" />
         <activity
             android:name=".ImpostazioniActivity"
             android:exported="true" />
-        <activity
-            android:name=".WelcomeActivity"
-            android:exported="true"/>
     </application>
 
 </manifest>

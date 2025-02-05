@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity"
+    tools:context=".HomeActivity"
     android:layout_marginStart="@dimen/margin"
     android:layout_marginEnd="@dimen/margin">
 
@@ -66,7 +66,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="text"
-            app:simpleItems="@array/costo_array"/>
+            app:simpleItems="@array/costo_array" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
