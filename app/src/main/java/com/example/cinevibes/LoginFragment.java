@@ -18,6 +18,8 @@ import com.google.android.material.textfield.TextInputEditText;
 
 import org.apache.commons.validator.routines.EmailValidator;
 
+import java.util.Objects;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link LoginFragment#newInstance} factory method to
@@ -55,22 +57,20 @@ public class LoginFragment extends Fragment {
 
         Button accediButton = view.findViewById(R.id.accediButton);
         accediButton.setOnClickListener(v -> {
-            if(isEmailOk(editTextEmail.getText().toString())) {
-                if(isPasswordOk(editTextPassword.getText().toString())) {
+            if(editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
+                if(editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
                   //  Intent intent = new Intent(this, HomeActivity.class );
                    // startActivity(intent);
                     Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_homeActivity4);
                 } else {
                     editTextPassword.setError("La password deve avere almeno 8 caratteri");
-                    Snackbar.make(view.findViewById(android.R.id.content),
-                                    "Controlla la tua password", Snackbar.LENGTH_SHORT)
-                            .show();
+                    Snackbar.make(requireView(), "Controlla la tua password", Snackbar.LENGTH_SHORT).show();
+
+
                 }
             } else {
                 editTextEmail.setError("Controlla la tua email");
-                Snackbar.make(view.findViewById(android.R.id.content),
-                                "Inserisci un email corretta", Snackbar.LENGTH_SHORT)
-                        .show();
+                Snackbar.make(requireView(), "Inserisci una mail corretta", Snackbar.LENGTH_SHORT).show();
             }
 
         });
