@@ -5,10 +5,12 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -44,5 +46,11 @@ public class PiattaformeFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        Button confermaPiattaformeButton = view.findViewById(R.id.confermaPiattaformeButton);
+        confermaPiattaformeButton.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_piattaformeFragment3_to_filtroTipoFragment);
+
+        });
     }
 }

@@ -9,5 +9,38 @@
         android:id="@+id/homeFragment"
         android:name="com.example.cinevibes.HomeFragment"
         tools:layout="@layout/fragment_home"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_piattaformeFragment3"
+            app:destination="@id/piattaformeFragment3" />
+    </fragment>
+    <fragment
+        android:id="@+id/piattaformeFragment3"
+        android:name="com.example.cinevibes.PiattaformeFragment"
+        android:label="PiattaformeFragment" >
+        <action
+            android:id="@+id/action_piattaformeFragment3_to_filtroTipoFragment"
+            app:destination="@id/filtroTipoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/filtroTipoFragment"
+        android:name="com.example.cinevibes.FiltroTipoFragment"
+        android:label="FiltroTipoFragment" >
+        <action
+            android:id="@+id/action_filtroTipoFragment_to_comeTiSentiFragment"
+            app:destination="@id/comeTiSentiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/comeTiSentiFragment"
+        android:name="com.example.cinevibes.ComeTiSentiFragment"
+        android:label="ComeTiSentiFragment" >
+        <action
+            android:id="@+id/action_comeTiSentiFragment_to_proposteFragment"
+            app:destination="@id/proposteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/proposteFragment"
+        android:name="com.example.cinevibes.ProposteFragment"
+        android:label="ProposteFragment" />
+
 </navigation>

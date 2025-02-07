@@ -151,7 +151,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/accediButton"
+        android:id="@+id/confermaCtsButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/conferma"

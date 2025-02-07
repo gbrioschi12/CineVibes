@@ -52,7 +52,7 @@
         android:text="@string/entrambi"/>
 
     <Button
-        android:id="@+id/accediButton"
+        android:id="@+id/confermaTipoButton"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/conferma"
