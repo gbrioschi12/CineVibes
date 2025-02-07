@@ -85,7 +85,7 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputEmail"
+            android:id="@+id/textInputEmailAccountFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress">
@@ -102,15 +102,15 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/textInputPassword"
+            android:id="@+id/textInputPasswordAccountFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="text">
+            android:inputType="textPassword">
         </com.google.android.material.textfield.TextInputEditText>
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/accediButton"
+        android:id="@+id/creaAccountButtonAccountFragment"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/crea_account"

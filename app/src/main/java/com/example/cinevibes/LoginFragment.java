@@ -56,12 +56,14 @@ public class LoginFragment extends Fragment {
         editTextPassword = view.findViewById(R.id.textInputPassword);
 
         Button accediButton = view.findViewById(R.id.accediButton);
+        Button creaAccountButton = view.findViewById(R.id.creaAccountButton);
+
         accediButton.setOnClickListener(v -> {
             if(editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
                 if(editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
                   //  Intent intent = new Intent(this, HomeActivity.class );
                    // startActivity(intent);
-                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_homeActivity4);
+                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_mainActivity);
                 } else {
                     editTextPassword.setError("La password deve avere almeno 8 caratteri");
                     Snackbar.make(requireView(), "Controlla la tua password", Snackbar.LENGTH_SHORT).show();
@@ -72,6 +74,11 @@ public class LoginFragment extends Fragment {
                 editTextEmail.setError("Controlla la tua email");
                 Snackbar.make(requireView(), "Inserisci una mail corretta", Snackbar.LENGTH_SHORT).show();
             }
+
+        });
+
+        creaAccountButton.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_accountFragment);
 
         });
     }
