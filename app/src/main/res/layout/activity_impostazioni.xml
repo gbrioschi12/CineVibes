@@ -9,57 +9,5 @@
     android:layout_marginEnd="@dimen/margin"
     tools:context=".ImpostazioniActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="140dp"
-        app:srcCompat="@drawable/icona2" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/impostazioni"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center_horizontal"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:text="@string/modifica_profilo"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_marginTop="40dp"
-        android:layout_gravity="center_horizontal"
-        app:icon="@drawable/baseline_edit_24">
-    </Button>
-
-    <com.google.android.material.materialswitch.MaterialSwitch
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:checked="true"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        android:text="@string/modalit_scura"/>
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:text="@string/assistenza"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        app:icon="@drawable/baseline_help_outline_24" >
-    </Button>
-
-    <Button
-        android:layout_width="200dp"
-        android:layout_height="80dp"
-        android:text="@string/log_out"
-        style="@style/Widget.Material3.Button.ElevatedButton"
-        android:layout_marginTop="20dp"
-        android:layout_gravity="center_horizontal"
-        app:icon="@drawable/baseline_no_accounts_24" >
-    </Button>
 
 </LinearLayout>
