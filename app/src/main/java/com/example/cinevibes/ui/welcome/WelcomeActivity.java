@@ -1,12 +1,11 @@
-package com.example.cinevibes;
+package com.example.cinevibes.ui.welcome;
 
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+
+import com.example.cinevibes.R;
 
 public class WelcomeActivity extends AppCompatActivity {
 

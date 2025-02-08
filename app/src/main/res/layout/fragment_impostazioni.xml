@@ -28,7 +28,7 @@
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:text="@string/modifica_profilo"
-        style="@style/Widget.Material3.Button.ElevatedButton"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
         android:layout_marginTop="40dp"
         android:layout_gravity="center_horizontal"
         app:icon="@drawable/baseline_edit_24">

@@ -1,6 +1,5 @@
-package com.example.cinevibes;
+package com.example.cinevibes.ui.welcome.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -13,27 +12,26 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.cinevibes.R;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textfield.TextInputEditText;
 
 import org.apache.commons.validator.routines.EmailValidator;
 
-import java.util.Objects;
-
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link LoginFragment#newInstance} factory method to
+ * Use the {@link AccountFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class LoginFragment extends Fragment {
+public class AccountFragment extends Fragment {
     private TextInputEditText editTextEmail, editTextPassword;
 
-    public LoginFragment() {
+    public AccountFragment() {
         // Required empty public constructor
     }
 
-    public static LoginFragment newInstance(String param1, String param2) {
-        LoginFragment fragment = new LoginFragment();
+    public static AccountFragment newInstance() {
+        AccountFragment fragment = new AccountFragment();
         return fragment;
     }
 
@@ -46,25 +44,24 @@ public class LoginFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_login, container, false);
+        return inflater.inflate(R.layout.fragment_account, container, false);
     }
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        editTextEmail = view.findViewById(R.id.textInputEmail);
-        editTextPassword = view.findViewById(R.id.textInputPassword);
 
-        Button accediButton = view.findViewById(R.id.accediButton);
-        Button creaAccountButton = view.findViewById(R.id.creaAccountButton);
+        editTextEmail = view.findViewById(R.id.textInputEmailAccountFragment);
+        editTextPassword = view.findViewById(R.id.textInputPasswordAccountFragment);
 
-        accediButton.setOnClickListener(v -> {
+        Button creaAccountButtonFragmentAccount = view.findViewById(R.id.creaAccountButtonAccountFragment);
+
+        creaAccountButtonFragmentAccount.setOnClickListener(v -> {
             if(editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
                 if(editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
-                  //  Intent intent = new Intent(this, HomeActivity.class );
-                   // startActivity(intent);
-                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_mainActivity);
-                } else {
+                    //  Intent intent = new Intent(this, HomeActivity.class );
+                    // startActivity(intent);
+                    Navigation.findNavController(v).navigate(R.id.action_accountFragment_to_mainActivity);                } else {
                     editTextPassword.setError("La password deve avere almeno 8 caratteri");
                     Snackbar.make(requireView(), "Controlla la tua password", Snackbar.LENGTH_SHORT).show();
 
@@ -77,10 +74,6 @@ public class LoginFragment extends Fragment {
 
         });
 
-        creaAccountButton.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_accountFragment);
-
-        });
     }
     private boolean isEmailOk (String email) {
         return EmailValidator.getInstance().isValid(email);

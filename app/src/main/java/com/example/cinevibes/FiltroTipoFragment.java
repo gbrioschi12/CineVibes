@@ -43,10 +43,6 @@ public class FiltroTipoFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        Button confermaTipoButton = view.findViewById(R.id.confermaTipoButton);
-        confermaTipoButton.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_filtroTipoFragment_to_comeTiSentiFragment);
 
-        });
     }
 }

@@ -47,10 +47,5 @@ public class PiattaformeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button confermaPiattaformeButton = view.findViewById(R.id.confermaPiattaformeButton);
-        confermaPiattaformeButton.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_piattaformeFragment3_to_filtroTipoFragment);
-
-        });
     }
 }

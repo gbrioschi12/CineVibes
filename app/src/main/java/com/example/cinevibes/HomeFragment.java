@@ -47,10 +47,5 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button iniziaRicercaButton = view.findViewById(R.id.iniziaRicercaButton);
-        iniziaRicercaButton.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_homeFragment_to_piattaformeFragment3);
-
-        });
     }
 }

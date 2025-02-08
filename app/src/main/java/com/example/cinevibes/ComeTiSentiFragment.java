@@ -44,9 +44,6 @@ public class ComeTiSentiFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        Button confermaCtsButton = view.findViewById(R.id.confermaCtsButton);
-        confermaCtsButton.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.action_comeTiSentiFragment_to_proposteFragment);
-        });
+
     }
 }
