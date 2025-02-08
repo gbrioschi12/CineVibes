@@ -13,16 +13,16 @@
         android:theme="@style/Base.Theme.CineVibes"
         tools:targetApi="31">
         <activity
-            android:name=".ui.home.Home2Activity"
+            android:name=".ui.home.HomeActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".ui.welcome.WelcomeActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".ui.welcome.WelcomeActivity"
-            android:exported="true"/>
 
     </application>
 </manifest>

@@ -25,7 +25,7 @@
     <string name="lingua">Lingua</string>
     <string name="costo">Costo</string>
     <string name="restrizioni_et">Restrizioni età</string>
-    <string name="la_mia_lista_di_gi_visti">La mia lista di già visti</string>
+    <string name="la_mia_lista">La mia lista</string>
     <string name="ultime_proposte">Ultime proposte</string>
     <string name="titolo">Titolo</string>
     <string name="generi">Generi</string>
@@ -78,4 +78,5 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="inizia" />
+    <string name="seleziona_cosa_vuoi_vedere">Seleziona cosa vuoi vedere</string>
 </resources>

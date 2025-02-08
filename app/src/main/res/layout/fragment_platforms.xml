@@ -1,28 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PiattaformeActivity"
-    android:orientation="vertical"
     android:layout_marginStart="@dimen/margin"
-    android:layout_marginEnd="@dimen/margin">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_height="80dp"
-        app:srcCompat="@drawable/titolo" />
+    android:layout_marginEnd="@dimen/margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.fragment.ricerca.PlatformsFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quali_piattaforme_di_streaming_possiedi"
         android:gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="0dp"
         android:layout_gravity="center_horizontal"
         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
@@ -30,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="20dp">
+        android:layout_marginTop="80dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -57,7 +48,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="150dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -84,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="220dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -107,12 +98,11 @@
 
     </LinearLayout>
 
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="290dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -139,8 +129,9 @@
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:text="@string/conferma"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="400dp"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_gravity="center_horizontal" >
     </Button>
-</LinearLayout>
+
+</FrameLayout>

@@ -24,7 +24,7 @@ import org.apache.commons.validator.routines.EmailValidator;
  * create an instance of this fragment.
  */
 public class AccountFragment extends Fragment {
-    private TextInputEditText editTextEmail, editTextPassword;
+    private TextInputEditText editTextEmail, editTextPassword, editTextNome, editTextCognome;
 
     public AccountFragment() {
         // Required empty public constructor
@@ -51,34 +51,36 @@ public class AccountFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        editTextEmail = view.findViewById(R.id.textInputEmailAccountFragment);
-        editTextPassword = view.findViewById(R.id.textInputPasswordAccountFragment);
+        editTextEmail = view.findViewById(R.id.textInputEmailAccount);
+        editTextPassword = view.findViewById(R.id.textInputPasswordAccount);
+        editTextNome = view.findViewById(R.id.textInputNome);
+        editTextCognome = view.findViewById(R.id.textInputCognome);
 
-        Button creaAccountButtonFragmentAccount = view.findViewById(R.id.creaAccountButtonAccountFragment);
+        Button confermaAccountButton = view.findViewById(R.id.creaAccountButtonAccountFragment);
 
-        creaAccountButtonFragmentAccount.setOnClickListener(v -> {
-            if(editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
-                if(editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
-                    //  Intent intent = new Intent(this, HomeActivity.class );
-                    // startActivity(intent);
-                    Navigation.findNavController(v).navigate(R.id.action_accountFragment_to_mainActivity);                } else {
-                    editTextPassword.setError("La password deve avere almeno 8 caratteri");
-                    Snackbar.make(requireView(), "Controlla la tua password", Snackbar.LENGTH_SHORT).show();
-
-
-                }
-            } else {
-                editTextEmail.setError("Controlla la tua email");
-                Snackbar.make(requireView(), "Inserisci una mail corretta", Snackbar.LENGTH_SHORT).show();
-            }
-
+        confermaAccountButton.setOnClickListener(v -> {
+            //if(editTextNome.getText()!=null) {
+               // if(editTextCognome.getText()!=null) {
+                    if (editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
+                        if (editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
+                            Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_home2Activity);
+                        } else {
+                            editTextPassword.setError("La password deve avere almeno 8 caratteri");
+                        }
+                    } else {
+                        editTextEmail.setError("email non valida");
+                    }
+               // } else { editTextCognome.setError("Inserisci un cognome");}
+            //} else {
+            // editTextNome.setError("Inserisci un nome");
+                //Snackbar.make(requireView(), "Inserisci correttamente Nome, Cognome ed Età", Snackbar.LENGTH_SHORT).show();
+            //}
         });
-
     }
     private boolean isEmailOk (String email) {
         return EmailValidator.getInstance().isValid(email);
     }
     private boolean isPasswordOk (String password) {
-        return password.length() > 8;
+        return password.length() > 7;
     }
 }
