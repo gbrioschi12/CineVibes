@@ -3,6 +3,8 @@ package com.example.cinevibes.ui.home.fragment;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -11,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.cinevibes.EsploraFragment;
 import com.example.cinevibes.R;
+import com.example.cinevibes.adapter.FilmRecyclerAdapter;
 import com.example.cinevibes.model.Film;
 import com.example.cinevibes.model.FilmApiResponse;
 import com.example.cinevibes.util.Constants;
@@ -49,11 +52,18 @@ public class SearchFragment extends Fragment {
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_search, container, false);
         //return inflater.inflate(R.layout.fragment_search, container, false);
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerview);
+        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
         JSONParserUtils jsonParserUtils = new JSONParserUtils(getContext());
 
         try {
             FilmApiResponse response = jsonParserUtils.parseJSONFileWithGSon(Constants.SAMPLE_JSON_FILENAME);
             List<Film> filmList = response.getResults();
+
+            FilmRecyclerAdapter adapter =
+                    new FilmRecyclerAdapter(R.layout.card_film, filmList);
+
+            recyclerView.setAdapter(adapter);
 
             int a = 0;
         } catch (IOException e) {
