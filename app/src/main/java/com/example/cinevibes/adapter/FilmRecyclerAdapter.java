@@ -55,7 +55,12 @@ public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapte
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, final int position) {
         viewHolder.getTextViewTitle().setText(filmList.get(position).getTitle());
-        viewHolder.getTextViewRating().setText((int) filmList.get(position).getVote_average());
+        double voteAverage = filmList.get(position).getVote_average();
+        String ratingText = String.format("%.1f", voteAverage);
+
+        viewHolder.getTextViewRating().setText(ratingText);
+
+
 
 
     }
