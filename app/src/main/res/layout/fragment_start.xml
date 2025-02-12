@@ -68,7 +68,8 @@
         android:text="@string/inizia_la_ricerca"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_marginTop="370dp"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center_horizontal"
+        android:enabled="false">
     </Button>
 
 </FrameLayout>

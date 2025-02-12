@@ -27,6 +27,7 @@ public class HomeActivity extends AppCompatActivity {
         NavHostFragment navHostFragment = (NavHostFragment) getSupportFragmentManager().
                 findFragmentById(R.id.fragmentContainerView);
 
+        assert navHostFragment != null;
         NavController navController = navHostFragment.getNavController();
         BottomNavigationView bottomNav = findViewById(R.id.bottomNavigation);
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
