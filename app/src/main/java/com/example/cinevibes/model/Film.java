@@ -1,8 +1,16 @@
 package com.example.cinevibes.model;
 
-import java.util.List;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
 
+import java.util.List;
+@Entity
 public class Film {
+
+    @PrimaryKey
+    public int uid;
+
     private boolean adult;
     private String backdrop_path;
     private int id;
@@ -17,8 +25,13 @@ public class Film {
     private float vote_average;
     private float vote_count;
     private List<Integer> genreIds;
+    private boolean liked;
+
+
 
     public Film() {}
+
+
 
     public boolean isAdult() {
         return adult;
@@ -130,5 +143,12 @@ public class Film {
 
     public void setGenreIds(List<Integer> genreIds) {
         this.genreIds = genreIds;
+    }
+    public boolean getLiked() {
+        return liked;
+    }
+
+    public void setLiked(boolean liked) {
+        this.liked = liked;
     }
 }

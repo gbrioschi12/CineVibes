@@ -61,11 +61,9 @@ public class SearchFragment extends Fragment {
             List<Film> filmList = response.getResults();
 
             FilmRecyclerAdapter adapter =
-                    new FilmRecyclerAdapter(R.layout.card_film, filmList);
+                    new FilmRecyclerAdapter(R.layout.card_film, filmList, true);
 
             recyclerView.setAdapter(adapter);
-
-            int a = 0;
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
