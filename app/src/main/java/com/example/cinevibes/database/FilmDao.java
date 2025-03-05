@@ -1,5 +1,7 @@
 package com.example.cinevibes.database;
 
+import androidx.lifecycle.LiveData;
+import androidx.lifecycle.LiveDataKt;
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -13,6 +15,10 @@ import java.util.List;
 
 @Dao
 public interface FilmDao {
+
+    @Insert
+    void insert(Film film);
+
     @Query("SELECT * FROM Film")
     List<Film> getAll();
 
@@ -41,4 +47,8 @@ public interface FilmDao {
 
     @Query("DELETE from Film WHERE liked = 0")
     void deleteCached();
+
+    @Query("UPDATE film SET liked = :liked WHERE id = :filmId")
+    void setFilmLiked(int filmId, boolean liked);
+
 }

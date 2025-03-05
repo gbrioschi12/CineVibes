@@ -1,3 +1,4 @@
+
 package com.example.cinevibes.adapter;
 
 import android.view.LayoutInflater;
@@ -6,7 +7,9 @@ import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.cinevibes.R;
@@ -17,9 +20,9 @@ import java.util.List;
 
 public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapter.ViewHolder> {
 
-    private int layout;
-    private List<Film> filmList;
-    private boolean heartVisible;
+    private final int layout;
+    private final List<Film> filmList;
+    private final boolean heartVisible;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textViewRating;
@@ -57,6 +60,7 @@ public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapte
     }
 
 
+    @NonNull
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
         View view = LayoutInflater.from(viewGroup.getContext())
@@ -74,21 +78,26 @@ public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapte
         viewHolder.getTextViewRating().setText(ratingText);
         viewHolder.getFavoriteCheckBox().setChecked(filmList.get(position).getLiked());
 
-        viewHolder.getFavoriteCheckBox().setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
-                Film currentFilm = filmList.get(viewHolder.getAdapterPosition());
+        viewHolder.getFavoriteCheckBox().setOnCheckedChangeListener((compoundButton, isChecked) -> {
+            FilmRoomDatabase database = FilmRoomDatabase.getDatabase(viewHolder.itemView.getContext());
 
-                currentFilm.setLiked(b);
+            new Thread(() -> {
+                Film film = filmList.get(viewHolder.getAdapterPosition());
+                film.setLiked(isChecked);
 
-                FilmRoomDatabase.getDatabase(viewHolder.getTextViewTitle().getContext()).
-                        filmDao().updateFilm(currentFilm);
-            }
+                database.filmDao().setFilmLiked(film.getId(), isChecked);
+
+                ((android.app.Activity) viewHolder.itemView.getContext()).runOnUiThread(() -> {
+                    String message = isChecked ? "Aggiunto ai preferiti" : "Rimosso dai preferiti";
+                    Toast.makeText(viewHolder.itemView.getContext(), film.getTitle() + " " + message, Toast.LENGTH_SHORT).show();
+                });
+
+            }).start();
         });
 
-        if (heartVisible == false) {
-            viewHolder.getFavoriteCheckBox().setVisibility(View.INVISIBLE);
-        }
+
+
+
 
 
 

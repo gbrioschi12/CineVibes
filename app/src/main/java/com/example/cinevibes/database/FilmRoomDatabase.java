@@ -33,8 +33,9 @@ public abstract class FilmRoomDatabase extends RoomDatabase {
             synchronized (FilmRoomDatabase.class) {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
-                                    FilmRoomDatabase.class, Constants.SAVED_FILMS_DATABASE)
-                            .allowMainThreadQueries().build();
+                                    FilmRoomDatabase.class, "film_database")
+                            .fallbackToDestructiveMigration()
+                            .build();
                 }
             }
         }

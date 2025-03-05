@@ -29,7 +29,11 @@ public class Film {
 
 
 
-    public Film() {}
+    public Film(String title, float vote_average, boolean liked) {
+        this.title = title;
+        this.vote_average = vote_average;
+        this.liked = liked;
+    }
 
 
 
