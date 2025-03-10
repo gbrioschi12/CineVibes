@@ -13,6 +13,7 @@ import android.view.ViewGroup;
 
 import com.example.cinevibes.EsploraFragment;
 import com.example.cinevibes.R;
+//import com.example.cinevibes.adapter.FilmRecyclerAdapter;
 import com.example.cinevibes.adapter.FilmRecyclerAdapter;
 import com.example.cinevibes.model.Film;
 import com.example.cinevibes.model.FilmApiResponse;
@@ -50,23 +51,27 @@ public class SearchFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_search, container, false);
-        //return inflater.inflate(R.layout.fragment_search, container, false);
-        RecyclerView recyclerView = view.findViewById(R.id.recyclerview);
+        View view = inflater.inflate(R.layout.fragment_list, container, false);
+
+        RecyclerView recyclerView = view.findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
+
         JSONParserUtils jsonParserUtils = new JSONParserUtils(getContext());
 
         try {
             FilmApiResponse response = jsonParserUtils.parseJSONFileWithGSon(Constants.SAMPLE_JSON_FILENAME);
+            //Log.i(TAG, response.getTotal_results() + "Total result to String");
             List<Film> filmList = response.getResults();
 
-            FilmRecyclerAdapter adapter =
-                    new FilmRecyclerAdapter(R.layout.card_film, filmList, true);
+            FilmRecyclerAdapter adapter = new FilmRecyclerAdapter(R.layout.card_film, filmList);
 
             recyclerView.setAdapter(adapter);
+
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
         return view;
     }
 

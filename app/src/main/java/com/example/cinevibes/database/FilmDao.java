@@ -16,14 +16,11 @@ import java.util.List;
 @Dao
 public interface FilmDao {
 
-    @Insert
-    void insert(Film film);
-
     @Query("SELECT * FROM Film")
     List<Film> getAll();
 
-    @Query("SELECT * FROM Film WHERE liked = 1")
-    List<Film> getLiked();
+    //@Query("SELECT * FROM Film WHERE liked = 1")
+    //List<Film> getLiked();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Film... films);
@@ -31,24 +28,19 @@ public interface FilmDao {
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAll(List<Film> films);
 
-
-
     @Update
     void updateFilm(Film film);
-
-    @Insert
-    void insertAll(Film... users);
 
     @Delete
     void delete(Film user);
 
+    //@Query("DELETE from Film WHERE liked = 0")
+    //void deleteCached();
+
     @Query("DELETE from Film")
     void deleteAll();
 
-    @Query("DELETE from Film WHERE liked = 0")
-    void deleteCached();
 
-    @Query("UPDATE film SET liked = :liked WHERE id = :filmId")
-    void setFilmLiked(int filmId, boolean liked);
+
 
 }

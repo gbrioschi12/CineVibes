@@ -1,6 +1,5 @@
 package com.example.cinevibes.model;
 
-import androidx.room.ColumnInfo;
 import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
@@ -11,47 +10,19 @@ public class Film {
     @PrimaryKey
     public int uid;
 
-    private boolean adult;
-    private String backdrop_path;
     private int id;
     private String original_language;
-    private String original_title;
-    private String overview;
-    private float popularity;
+    private String overview; //trama
     private String poster_path;
     private String release_date;
     private String title;
-    private boolean video;
-    private float vote_average;
-    private float vote_count;
-    private List<Integer> genreIds;
-    private boolean liked;
+    private Float vote_avarage;
+    private List<Integer> genre_ids;
 
 
+   //costruttore
+    public Film() {}
 
-    public Film(String title, float vote_average, boolean liked) {
-        this.title = title;
-        this.vote_average = vote_average;
-        this.liked = liked;
-    }
-
-
-
-    public boolean isAdult() {
-        return adult;
-    }
-
-    public void setAdult(boolean adult) {
-        this.adult = adult;
-    }
-
-    public String getBackdrop_path() {
-        return backdrop_path;
-    }
-
-    public void setBackdrop_path(String backdrop_path) {
-        this.backdrop_path = backdrop_path;
-    }
 
     public int getId() {
         return id;
@@ -69,28 +40,12 @@ public class Film {
         this.original_language = original_language;
     }
 
-    public String getOriginal_title() {
-        return original_title;
-    }
-
-    public void setOriginal_title(String original_title) {
-        this.original_title = original_title;
-    }
-
     public String getOverview() {
         return overview;
     }
 
     public void setOverview(String overview) {
         this.overview = overview;
-    }
-
-    public float getPopularity() {
-        return popularity;
-    }
-
-    public void setPopularity(float popularity) {
-        this.popularity = popularity;
     }
 
     public String getPoster_path() {
@@ -117,42 +72,19 @@ public class Film {
         this.title = title;
     }
 
-    public boolean isVideo() {
-        return video;
+    public Float getVote_avarage() {
+        return vote_avarage;
     }
 
-    public void setVideo(boolean video) {
-        this.video = video;
+    public void setVote_avarage(Float vote_avarage) {
+        this.vote_avarage = vote_avarage;
     }
 
-    public float getVote_average() {
-        return vote_average;
+    public List<Integer> getGenre_ids() {
+        return genre_ids;
     }
 
-    public void setVote_average(float vote_average) {
-        this.vote_average = vote_average;
-    }
-
-    public float getVote_count() {
-        return vote_count;
-    }
-
-    public void setVote_count(float vote_count) {
-        this.vote_count = vote_count;
-    }
-
-    public List<Integer> getGenreIds() {
-        return genreIds;
-    }
-
-    public void setGenreIds(List<Integer> genreIds) {
-        this.genreIds = genreIds;
-    }
-    public boolean getLiked() {
-        return liked;
-    }
-
-    public void setLiked(boolean liked) {
-        this.liked = liked;
+    public void setGenre_ids(List<Integer> genre_ids) {
+        this.genre_ids = genre_ids;
     }
 }

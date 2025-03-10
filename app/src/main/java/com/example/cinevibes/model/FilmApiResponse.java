@@ -4,11 +4,10 @@ import java.util.List;
 
 public class FilmApiResponse {
     private int page;
+    private List<Film> results;
     private int total_pages;
     private int total_results;
-    private List<Film> results;
 
-    public FilmApiResponse() {}
 
     public int getPage() {
         return page;
@@ -16,6 +15,14 @@ public class FilmApiResponse {
 
     public void setPage(int page) {
         this.page = page;
+    }
+
+    public List<Film> getResults() {
+        return results;
+    }
+
+    public void setResults(List<Film> results) {
+        this.results = results;
     }
 
     public int getTotal_pages() {
@@ -32,13 +39,5 @@ public class FilmApiResponse {
 
     public void setTotal_results(int total_results) {
         this.total_results = total_results;
-    }
-
-    public List<Film> getResults() {
-        return results;
-    }
-
-    public void setResults(List<Film> results) {
-        this.results = results;
     }
 }
