@@ -1,6 +1,5 @@
 package com.example.cinevibes.adapter;
 
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,6 +20,7 @@ public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapte
 
     private int layout;
     private List<Film> filmList;
+    private boolean listedVisible;
 
     public static class ViewHolder extends RecyclerView.ViewHolder {
         private final TextView textViewTitle;
@@ -38,15 +38,14 @@ public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapte
         }
 
         public CheckBox getFavouriteCheckbox() {
-            return favouriteCheckbox;
-        }
+            return favouriteCheckbox; }
     }
 
-    public FilmRecyclerAdapter(int layout, List<Film> filmList) {
+    public FilmRecyclerAdapter(int layout, List<Film> filmList, boolean listedVisible) {
         this.layout = layout;
         this.filmList = filmList;
-        }
-
+        this.listedVisible = listedVisible;
+    }
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup viewGroup, int viewType) {
@@ -73,19 +72,18 @@ public class FilmRecyclerAdapter extends RecyclerView.Adapter<FilmRecyclerAdapte
 
                 if(b) {
                     FilmRoomDatabase.getDatabase(viewHolder.getTextViewTitle().getContext()).
-                     filmDao().insertAll(filmList.get(position));
+                            filmDao().insertAll(filmList.get(position));
                 } else {
                     FilmRoomDatabase.getDatabase(viewHolder.getTextViewTitle().getContext()).
-                            filmDao().deleteAll(filmList.get(position));
+                            filmDao().delete(filmList.get(position));
                 }
             }
         });
 
-       // if (heartVisible == false) {
-         //   viewHolder.getFavouriteCheckbox().setVisibility(View.INVISIBLE);
+        if (listedVisible == false) {
+            viewHolder.getFavouriteCheckbox().setVisibility(View.INVISIBLE);
         }
-
-
+    }
 
 
     @Override

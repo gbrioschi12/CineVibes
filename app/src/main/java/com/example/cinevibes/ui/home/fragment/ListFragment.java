@@ -54,7 +54,7 @@ public class ListFragment extends Fragment {
                         .filmDao().getAll();
 
         FilmRecyclerAdapter adapter =
-                new FilmRecyclerAdapter(R.layout.card_film, filmList);
+                new FilmRecyclerAdapter(R.layout.card_film, filmList, false);
 
         recyclerView.setAdapter(adapter);
 

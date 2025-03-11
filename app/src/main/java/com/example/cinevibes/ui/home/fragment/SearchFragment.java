@@ -63,7 +63,7 @@ public class SearchFragment extends Fragment {
             //Log.i(TAG, response.getTotal_results() + "Total result to String");
             List<Film> filmList = response.getResults();
 
-            FilmRecyclerAdapter adapter = new FilmRecyclerAdapter(R.layout.card_film, filmList);
+            FilmRecyclerAdapter adapter = new FilmRecyclerAdapter(R.layout.card_film, filmList, true);
 
             recyclerView.setAdapter(adapter);
 
@@ -71,9 +71,6 @@ public class SearchFragment extends Fragment {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-
         return view;
     }
-
-
 }

@@ -19,27 +19,29 @@ public interface FilmDao {
     @Query("SELECT * FROM Film")
     List<Film> getAll();
 
-    //@Query("SELECT * FROM Film WHERE liked = 1")
-    //List<Film> getLiked();
+    @Insert
+    void insertAll (Film... users);
+
+    @Delete
+    void delete(Film user);
+
+    @Query("DELETE from Film")
+    void deleteAll();
+
+    /*@Query("SELECT * FROM Film WHERE liked = 1")
+    List<Film> getLiked();
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insert(Film... films);
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     void insertAll(List<Film> films);
-
-    @Update
-    void updateFilm(Film film);
-
-    @Delete
-    void delete(Film user);
+*/
+  //  @Update
+   // void updateFilm(Film film);
 
     //@Query("DELETE from Film WHERE liked = 0")
     //void deleteCached();
-
-    @Query("DELETE from Film")
-    void deleteAll();
-
 
 
 

@@ -16,13 +16,10 @@ public class Film {
     private String poster_path;
     private String release_date;
     private String title;
-    private Float vote_avarage;
+    private float vote_avarage;
     private List<Integer> genre_ids;
 
-
-   //costruttore
-    public Film() {}
-
+    public Film() {} //costruttore
 
     public int getId() {
         return id;
@@ -72,11 +69,11 @@ public class Film {
         this.title = title;
     }
 
-    public Float getVote_avarage() {
+    public float getVote_avarage() {
         return vote_avarage;
     }
 
-    public void setVote_avarage(Float vote_avarage) {
+    public void setVote_avarage(float vote_avarage) {
         this.vote_avarage = vote_avarage;
     }
 
