@@ -2,6 +2,9 @@
 agp = "8.8.0"
 commonsValidator = "1.9.0"
 converterGson = "2.9.0"
+credentialsPlayServicesAuth = "1.5.0"
+firebaseBom = "33.13.0"
+googleid = "1.1.1"
 gson = "2.12.1"
 junit = "4.13.2"
 junitVersion = "1.2.1"
@@ -19,6 +22,11 @@ roomRuntime = "2.6.1"
 [libraries]
 commons-validator = { module = "commons-validator:commons-validator", version.ref = "commonsValidator" }
 converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "converterGson" }
+credentials = { module = "androidx.credentials:credentials", version.ref = "credentialsPlayServicesAuth" }
+credentials-play-services-auth = { module = "androidx.credentials:credentials-play-services-auth", version.ref = "credentialsPlayServicesAuth" }
+firebase-auth = { module = "com.google.firebase:firebase-auth" }
+firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
+googleid = { module = "com.google.android.libraries.identity.googleid:googleid", version.ref = "googleid" }
 gson = { module = "com.google.code.gson:gson", version.ref = "gson" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }

@@ -79,4 +79,7 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="inizia" />
     <string name="seleziona_cosa_vuoi_vedere">Seleziona cosa vuoi vedere</string>
+    <string name="benvenuto">Benvenuto!</string>
+    <string name="accedi_con_google">Accedi con Google</string>
+    <string name="oppure">oppure</string>
 </resources>
