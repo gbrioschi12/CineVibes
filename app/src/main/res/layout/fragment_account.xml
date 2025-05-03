@@ -25,7 +25,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="@dimen/textBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nome"
         app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
@@ -42,7 +42,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="@dimen/textBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/cognome"
         app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
@@ -59,7 +59,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="@dimen/textBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/età"
         app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
@@ -76,7 +76,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="@dimen/textBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/email"
         app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
@@ -93,7 +93,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="@dimen/textBox"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/password"
         app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
@@ -110,11 +110,11 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/creaAccountButtonAccountFragment"
+        android:id="@+id/confermaAccountButton"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="55dp"
         android:text="@string/crea_account"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
         style="@style/Widget.Material3.Button.Icon"
         android:layout_gravity="center_horizontal" >
     </Button>

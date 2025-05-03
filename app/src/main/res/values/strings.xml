@@ -1,10 +1,10 @@
 <resources>
     <string name="app_name">CineVibes</string>
-    <string name="accedi_al_tuo_account">Accedi al tuo account</string>
+    <string name="accedi_al_tuo_account">Hai già un account? Accedi</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
     <string name="accedi">Accedi</string>
-    <string name="crea_account">Crea account</string>
+    <string name="crea_account">Crea nuovo account</string>
     <string name="crea_un_nuovo_account">Crea un nuovo account</string>
     <string name="nome">Nome</string>
     <string name="cognome">Cognome</string>
@@ -18,19 +18,18 @@
     <string name="serie_tv">Serie TV</string>
     <string name="entrambi">Entrambi</string>
     <string name="home">Home</string>
-    <string name="esplora">Esplora</string>
+    <string name="esplora">Esplora il catalogo di film e serieTV</string>
     <string name="lista">Lista</string>
     <string name="seleziona_i_filtri_base">Seleziona i filtri base</string>
     <string name="inizia_la_ricerca">Inizia la ricerca</string>
     <string name="lingua">Lingua</string>
     <string name="costo">Costo</string>
     <string name="restrizioni_et">Restrizioni età</string>
-    <string name="la_mia_lista">La mia lista</string>
-    <string name="ultime_proposte">Ultime proposte</string>
+    <string name="la_mia_lista">La mia lista di preferiti</string>
     <string name="titolo">Titolo</string>
     <string name="generi">Generi</string>
     <string name="anno">anno</string>
-    <string name="aggiungi_alla_lista">Aggiungi alla lista</string>
+    <string name="aggiungi_alla_lista">Aggiungi alla mia lista</string>
     <string name="modalit_scura">Modalità scura</string>
     <string name="visualizzazioni">visualizzazioni</string>
     <string name="imdb_rating">IMDB Rating</string>
@@ -47,7 +46,7 @@
     <string name="ispirato">Ispirato</string>
     <string name="coraggioso">Coraggioso</string>
     <string name="divertito">Divertito</string>
-    <string name="quali_piattaforme_di_streaming_possiedi">Quali piattaforme di streaming possiedi?</string>
+    <string name="quali_piattaforme_di_streaming_possiedi">Quali piattaforme possiedi?</string>
     <string name="apple_tv">Apple TV</string>
     <string name="disney_plus">Disney Plus</string>
     <string name="netflix">Netflix</string>
@@ -58,9 +57,6 @@
         <item>Francese</item>
         <item>Qualsiasi</item>
     </string-array>
-    <string name="seleziona_lingua">Seleziona una lingua da elenco</string>
-    <string name="seleziona_costo">Seleziona un tipo di costo</string>
-    <string name="seleziona_restrizione">Seleziona una restrizione età</string>
     <string name="acculturato">Acculturato</string>
     <string name="energico">Energico</string>
     <string name="conferma">Conferma</string>
@@ -75,11 +71,9 @@
         <item>Nascondi +18</item>
         <item>Tutti</item>
     </string-array>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="inizia" />
-    <string name="seleziona_cosa_vuoi_vedere">Seleziona cosa vuoi vedere</string>
+    <string name="seleziona_cosa_vuoi_vedere">Cosa preferisci vedere?</string>
     <string name="benvenuto">Benvenuto!</string>
     <string name="accedi_con_google">Accedi con Google</string>
     <string name="oppure">oppure</string>
+    <string name="scegli_i_filtri_base">Scegli i filtri base</string>
 </resources>

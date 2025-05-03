@@ -5,21 +5,29 @@
     android:layout_height="match_parent"
     android:layout_marginStart="@dimen/margin"
     android:layout_marginEnd="@dimen/margin"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.fragment.ricerca.EmotionsFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/titolo" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/come_vuoi_sentirti"
-        android:layout_marginTop="0dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="120dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="180dp"
         android:orientation="horizontal">
 
         <com.google.android.material.chip.Chip
@@ -43,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="150dp"
+        android:layout_marginTop="240dp"
         android:orientation="horizontal">
 
         <com.google.android.material.chip.Chip
@@ -67,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="300dp"
         android:orientation="horizontal">
 
         <com.google.android.material.chip.Chip
@@ -91,7 +99,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="290dp"
+        android:layout_marginTop="360dp"
         android:orientation="horizontal">
 
         <com.google.android.material.chip.Chip
@@ -115,7 +123,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="420dp"
         android:orientation="horizontal">
 
         <com.google.android.material.chip.Chip
@@ -147,7 +155,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="480dp"
         android:orientation="horizontal">
 
         <com.google.android.material.chip.Chip
@@ -158,17 +166,16 @@
             style="@style/Widget.Material3.Chip.Filter"
             android:text="@string/romantico"/>
 
-
     </LinearLayout>
 
     <Button
-        android:id="@+id/confermaCtsButton"
+        android:id="@+id/confermaEmozioneButton"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/conferma"
-        android:layout_marginTop="500dp"
+        android:layout_marginTop="580dp"
         style="@style/Widget.Material3.Button.Icon"
-        android:layout_gravity="center_horizontal" >
+        android:layout_gravity="center_horizontal">
     </Button>
 
 </FrameLayout>

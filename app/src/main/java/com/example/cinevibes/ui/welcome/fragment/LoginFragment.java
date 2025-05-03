@@ -34,8 +34,8 @@ import java.util.concurrent.Executor;
 public class LoginFragment extends Fragment {
     private static final String TAG = LoginFragment.class.getSimpleName();
     private TextInputEditText editTextEmail, editTextPassword;
-    private SignInClient oneTapClient;
-    private BeginSignInRequest signInRequest;
+    //private SignInClient oneTapClient;
+    //private BeginSignInRequest signInRequest;
 
     public LoginFragment() {
         // Required empty public constructor
@@ -76,7 +76,6 @@ public class LoginFragment extends Fragment {
         Button creaAccountButton = view.findViewById(R.id.creaAccountButton);
 
         accediButton.setOnClickListener(v -> {
-            /*
             if(editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
                 if(editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
                     Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_home2Activity);
@@ -88,10 +87,10 @@ public class LoginFragment extends Fragment {
                 editTextEmail.setError("email non valida");
                 //Snackbar.make(requireView(), "Inserisci una mail corretta", Snackbar.LENGTH_SHORT).show();
             }
-            */
 
 
-/*
+
+            /*
             mAuth.createUserWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -109,7 +108,7 @@ public class LoginFragment extends Fragment {
                             }
                         }
                     });
-                    */
+
 
             oneTapClient = Identity.getSignInClient(requireActivity());
             signInRequest = BeginSignInRequest.builder()
@@ -126,7 +125,7 @@ public class LoginFragment extends Fragment {
                     // Automatically sign in when exactly one credential is retrieved.
                     .setAutoSelectEnabled(true)
                     .build();
-
+        */
         });
 
         creaAccountButton.setOnClickListener(v -> {

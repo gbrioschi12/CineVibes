@@ -8,20 +8,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.home.fragment.ricerca.PlatformsFragment">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/titolo" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/quali_piattaforme_di_streaming_possiedi"
-        android:gravity="center"
-        android:layout_marginTop="0dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="80dp">
+        android:layout_marginTop="220dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -48,7 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="150dp">
+        android:layout_marginTop="290dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -75,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="220dp">
+        android:layout_marginTop="360dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -102,7 +108,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="290dp">
+        android:layout_marginTop="430dp">
 
         <ImageView
             android:layout_width="50dp"
@@ -127,11 +133,11 @@
     <Button
         android:id="@+id/confermaPiattaformeButton"
         android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:text="@string/conferma"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="540dp"
         style="@style/Widget.Material3.Button.Icon"
-        android:layout_gravity="center_horizontal" >
+        android:layout_gravity="center_horizontal">
     </Button>
 
 </FrameLayout>

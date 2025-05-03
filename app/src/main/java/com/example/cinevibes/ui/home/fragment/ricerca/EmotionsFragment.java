@@ -70,7 +70,7 @@ public class EmotionsFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Button confermaCtsButton = view.findViewById(R.id.confermaCtsButton);
+        Button confermaCtsButton = view.findViewById(R.id.confermaEmozioneButton);
 
         confermaCtsButton.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_emotionsFragment_to_optionsFragment);

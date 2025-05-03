@@ -56,7 +56,7 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
 
-    implementation(libs.credentials.play.services.auth)
-    implementation(libs.credentials)
-    implementation(libs.googleid)
+    //implementation(libs.credentials.play.services.auth)
+    //implementation(libs.credentials)
+    //implementation(libs.googleid)
 }

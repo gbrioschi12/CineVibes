@@ -20,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="60dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:text="@string/benvenuto"/>
 
@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:startIconDrawable="@drawable/baseline_alternate_email_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:hint="@string/email">
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_gravity="center_horizontal"
-        app:hintTextAppearance="@style/TextAppearance.Material3.BodySmall"
+        app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
         app:startIconDrawable="@drawable/baseline_password_24"
         style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
         android:hint="@string/password">
