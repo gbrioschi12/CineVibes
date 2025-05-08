@@ -56,7 +56,8 @@ dependencies {
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.auth)
 
-    //implementation(libs.credentials.play.services.auth)
-    //implementation(libs.credentials)
-    //implementation(libs.googleid)
+    implementation (libs.gms.play.services.auth)
+   // implementation(libs.credentials.v130)
+   // implementation(libs.credentials.play.services.auth.v130)
+   // implementation(libs.googleid)
 }

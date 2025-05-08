@@ -12,7 +12,20 @@
           "package_name": "com.example.cinevibes"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "273129357812-cngvr0eak4d6sokhje9j9vil4jprd7ln.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.cinevibes",
+            "certificate_hash": "e4380dc4bac62aa1fdf0325e7726a07c374f49d7"
+          }
+        },
+        {
+          "client_id": "273129357812-q8iav7kp90mk1kn1b28mbdqr5g9p7p3s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyARQkqQuQwCJUIXhAKe3vwBlJ0nO8OPzzg"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "273129357812-q8iav7kp90mk1kn1b28mbdqr5g9p7p3s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

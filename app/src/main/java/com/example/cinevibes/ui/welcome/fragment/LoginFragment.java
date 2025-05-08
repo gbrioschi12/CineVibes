@@ -14,6 +14,9 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.cinevibes.R;
+import com.google.android.gms.auth.api.identity.BeginSignInRequest;
+import com.google.android.gms.auth.api.identity.Identity;
+import com.google.android.gms.auth.api.identity.SignInClient;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;
@@ -75,6 +78,7 @@ public class LoginFragment extends Fragment {
         Button accediButton = view.findViewById(R.id.accediButton);
         Button creaAccountButton = view.findViewById(R.id.creaAccountButton);
 
+
         accediButton.setOnClickListener(v -> {
             if(editTextEmail.getText() != null && isEmailOk(editTextEmail.getText().toString())) {
                 if(editTextPassword.getText() != null && isPasswordOk(editTextPassword.getText().toString())) {
@@ -87,10 +91,7 @@ public class LoginFragment extends Fragment {
                 editTextEmail.setError("email non valida");
                 //Snackbar.make(requireView(), "Inserisci una mail corretta", Snackbar.LENGTH_SHORT).show();
             }
-
-
-
-            /*
+/*
             mAuth.createUserWithEmailAndPassword(editTextEmail.getText().toString(), editTextPassword.getText().toString())
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
@@ -108,10 +109,11 @@ public class LoginFragment extends Fragment {
                             }
                         }
                     });
+                    */
 
-
-            oneTapClient = Identity.getSignInClient(requireActivity());
-            signInRequest = BeginSignInRequest.builder()
+/*
+            SignInClient oneTapClient = Identity.getSignInClient(requireActivity());
+            BeginSignInRequest signInRequest = BeginSignInRequest.builder()
                     .setPasswordRequestOptions(BeginSignInRequest.PasswordRequestOptions.builder()
                             .setSupported(true)
                             .build())
@@ -125,7 +127,7 @@ public class LoginFragment extends Fragment {
                     // Automatically sign in when exactly one credential is retrieved.
                     .setAutoSelectEnabled(true)
                     .build();
-        */
+*/
         });
 
         creaAccountButton.setOnClickListener(v -> {
