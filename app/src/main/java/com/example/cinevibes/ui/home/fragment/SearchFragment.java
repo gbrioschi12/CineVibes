@@ -19,6 +19,7 @@ import com.example.cinevibes.model.Film;
 import com.example.cinevibes.model.FilmApiResponse;
 import com.example.cinevibes.util.Constants;
 import com.example.cinevibes.util.JSONParserUtils;
+import com.example.cinevibes.util.ResponseCallback;
 
 import java.io.IOException;
 import java.util.List;
@@ -28,7 +29,7 @@ import java.util.List;
  * Use the {@link SearchFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class SearchFragment extends Fragment {
+public class SearchFragment extends Fragment implements ResponseCallback {
 
 
     public static final String TAG = EsploraFragment.class.getName();
@@ -72,5 +73,15 @@ public class SearchFragment extends Fragment {
             throw new RuntimeException(e);
         }
         return view;
+    }
+
+    @Override
+    public void onSuccess(List<Film> filmList, long lastUpdate) {
+
+    }
+
+    @Override
+    public void onFailure(String errorMessage) {
+
     }
 }
