@@ -5,13 +5,13 @@
         android:id="@+id/startFragment"
         android:enabled="true"
         android:icon="@drawable/baseline_home_24"
-        android:title="@string/home"
+        android:title="Ricerca"
         />
     <item
         android:id="@+id/searchFragment"
         android:enabled="true"
         android:icon="@drawable/baseline_search_24"
-        android:title="@string/esplora"
+        android:title="Esplora"
         />
     <item
         android:id="@+id/listFragment"

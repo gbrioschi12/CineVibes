@@ -1,5 +1,6 @@
 plugins {
     id("com.android.application")
+    id("com.google.gms.google-services")
 }
 
 
@@ -52,4 +53,10 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
 
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.auth)
+
+    //implementation(libs.credentials.play.services.auth)
+    //implementation(libs.credentials)
+    //implementation(libs.googleid)
 }

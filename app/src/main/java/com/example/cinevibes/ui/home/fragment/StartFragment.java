@@ -70,7 +70,7 @@ public class StartFragment extends Fragment {
 
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        Button confermaStartButton = view.findViewById(R.id.confermaStartButton);
+        Button confermaStartButton = view.findViewById(R.id.ricercaButton);
 
         confermaStartButton.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.action_startFragment_to_platformsFragment);

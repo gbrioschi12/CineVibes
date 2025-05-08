@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273129357812",
+    "project_id": "cinevibes-104c6",
+    "storage_bucket": "cinevibes-104c6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273129357812:android:364f403bcec0ecfadd79a1",
+        "android_client_info": {
+          "package_name": "com.example.cinevibes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARQkqQuQwCJUIXhAKe3vwBlJ0nO8OPzzg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
