@@ -22,13 +22,14 @@ import com.example.cinevibes.model.Film;
 import com.example.cinevibes.model.FilmApiResponse;
 import com.example.cinevibes.util.Constants;
 import com.example.cinevibes.util.JSONParserUtils;
+import com.example.cinevibes.util.ResponseCallback;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class ListFragment extends Fragment {
+public class ListFragment extends Fragment implements ResponseCallback {
 
     public static final String TAG = ListFragment.class.getName();
 
@@ -59,6 +60,16 @@ public class ListFragment extends Fragment {
         recyclerView.setAdapter(adapter);
 
         return view;
+
+    }
+
+    @Override
+    public void onSuccess(List<Film> filmList, long lastUpdate) {
+
+    }
+
+    @Override
+    public void onFailure(String errorMessage) {
 
     }
 }
